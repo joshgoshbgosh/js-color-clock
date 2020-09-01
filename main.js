@@ -1,4 +1,5 @@
 
+//running clock//
 
 setInterval(setTime, 1000);
 
@@ -28,3 +29,7 @@ function setTime() {
 
   document.querySelector(".clock-display").innerHTML = hrs + ':' + min + ':' + sec;
 };
+
+//timer bar//
+
+console.log(1.0)
