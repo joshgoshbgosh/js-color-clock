@@ -1,6 +1,6 @@
 
-setInterval(clock-display, 500);
-function clock-display() {
+setInterval(clockdisplay, 1000);
+function clockdisplay() {
   var time = new Date();
   var hrs = time.getHours();
   var min = time.getMinutes();
@@ -14,5 +14,5 @@ function clock-display() {
     hrs = 12;
   }
 
-  document.getElementById(`clock-display`).innerHTML = hrs + ':' + min + ':' + sec;
+  document.getElementById('clock-display');
 }
