@@ -38,4 +38,19 @@ console.log(sec / 60);
 const $progressBar =document.querySelector(".clock-progress-bar");
 const width = `${sec / 60 * 14}rem`;
 $progressBar.style.width = width;
+
+//hexidecimal color//
+
+var doc = document.getElementById("background");
+var color = ["black", "blue", "brown", "green"];
+var i = 0;
+function change() {
+  doc.style.backgroundColor = color[i];
+  i++;
+
+  if(i > color.length - 1) {
+    i = 0;
+  }
+}
+setInterval(change, 1000);
 }
