@@ -28,8 +28,14 @@ function setTime() {
   }
 
   document.querySelector(".clock-display").innerHTML = hrs + ':' + min + ':' + sec;
-};
 
-//timer bar//
 
-console.log(1.0)
+//console.loging 1 minute//
+console.log(sec / 60);
+
+
+//time bar//
+const $progressBar =document.querySelector(".clock-progress-bar");
+const width = `${sec / 60 * 14}rem`;
+$progressBar.style.width = width;
+}
