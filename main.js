@@ -36,9 +36,6 @@ console.log(sec / 60);
 
 
 //time bar//
-const $progressBar =document.querySelector(".clock-progress-bar");
-const width = `${sec / 60 * 14}rem`;
-$progressBar.style.width = width;
 
 //hexidecimal color//
 
@@ -73,6 +70,10 @@ setInterval(function() {
                 min = ("0" + currentTime.getMinutes()).slice(-2);
                 sec = ("0" + currentTime.getSeconds()).slice(-2);
             }
+            const $progressBar = document.querySelector(".clock-progress-bar");
+            const width = `${sec / 60 * 14}rem`;
+            $progressBar.style.width = width;
+
             clockDisplay.textContent = hrs + ":" + min + ":" + sec;
             colorClock.style.backgroundColor = "#" + hrs.toString(16) + min.toString(16) + sec.toString(16);
         }, 1000);
